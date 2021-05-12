@@ -1,23 +1,30 @@
 [Go Back](README.md)
 
-- Maven Surefire Plugin
-  Maven plugin used during the _test_ phase of the build lefecycle to execute unit tests.
-  It generates reports in 2 formats (_.xml and _.txt).
-  It has only one goal: _surfire:test_
+# Maven test plugins
 
-- Maven Failsafe Plugin
-  Maven plugin to run integration tests.
-  Failsafe because its sysnonym to surefire, and if it fails, it fails safely
-  The Maven lifecycle has four phases for running integration tests:
+## Maven Surefire Plugin
 
-  1. _pre-integration-test_ for setting up the integration test environment.
-  2. _integration-test_ for running the integration tests.
-  3. _post-integration-test_ for tearing down the integration test environment.
-  4. _verify_ for checking the results of the integration tests.
+Maven plugin used during the _test_ phase of the build lefecycle to execute unit tests.
+It generates reports in 2 formats (_.xml and _.txt).
+It has only one goal: _surfire:test_
 
-  If you use the Surefire Plugin for running tests, then when you have a test failure, the build will stop at the integration-test phase and your integration test environment will not have been torn down correctly.
+## Maven Failsafe Plugin
 
-- Skip
-  -DskipTests: Skip running any tests
-  -DskipITs: Skip running only integration tests
-  -Dmaven.test.skip=true: Skip compiling tests
+Maven plugin to run integration tests.
+Failsafe because its sysnonym to surefire, and if it fails, it fails safely
+The Maven lifecycle has four phases for running integration tests:
+
+1. **pre-integration-test** for setting up the integration test environment.
+2. **integration-test** for running the integration tests.
+3. **post-integration-test** for tearing down the integration test environment.
+4. **verify** for checking the results of the integration tests.
+
+If you use the Surefire Plugin for running tests, then when you have a test failure, the build will stop at the integration-test phase and your integration test environment will not have been torn down correctly.
+
+## Skip tests
+
+-DskipTests: Skip running any tests
+-DskipITs: Skip running only integration tests
+-Dmaven.test.skip=true: Skip compiling tests
+
+[Go Back](README.md)
