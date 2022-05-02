@@ -39,7 +39,7 @@ Now, the mistake, that developers generally do, when they call such blocking met
 
 To sum things up:
 
-    This is bad
+This is bad
 
 ```
 try {
@@ -49,7 +49,7 @@ try {
 }
 ```
 
-    This is better
+This is better
 
 ```
 try {
@@ -62,6 +62,6 @@ Thread.currentThread().interrupt();
 
 ## References
 
-- https://docs.oracle.com/javase/tutorial/essential/concurrency/interrupt.html
-- https://docs.oracle.com/javase/8/docs/api/?java/lang/InterruptedException.html
-- https://docs.oracle.com/javase/8/docs/api/?java/lang/InterruptedException.html
+- [https://docs.oracle.com/javase/tutorial/essential/concurrency/interrupt.html](https://docs.oracle.com/javase/tutorial/essential/concurrency/interrupt.html)
+- [https://docs.oracle.com/javase/8/docs/api/?java/lang/InterruptedException.html](https://docs.oracle.com/javase/8/docs/api/?java/lang/InterruptedException.html)
+- [https://docs.oracle.com/javase/8/docs/api/?java/lang/InterruptedException.html](https://docs.oracle.com/javase/8/docs/api/?java/lang/InterruptedException.html)
