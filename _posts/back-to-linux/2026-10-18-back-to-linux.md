@@ -15,6 +15,8 @@ I remember when I first tried to be geeky and install a Linux OS. I was still in
 
 At that time, the first Linux OS I stumbled on was Ubuntu. You could order the CDs of the OS online for free and have them delivered to you. I have to admit, when I ordered, I was not expecting to receive any mail. I was living in Casablanca (Morocco), I had never received any mail before at all, let alone from outside of the country. But lo and behold, one day my father comes to me (he was as surprised as I am) with a mail that I received! Yes, it was the first time ever I received a mail to me personally. The good old times.
 
+![My Ubuntu 7.04 CD package](/assets/img/ubuntu.jpg)
+
 ## Linux through time
 
 Fast forward a few years, I gained a little experience with Linux. It was even the main OS I used during my master's studies. However, it still never felt as straightforward or easy to use as Windows. I always had to have both OS ready to use.
