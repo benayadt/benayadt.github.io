@@ -25,7 +25,7 @@ Kinesis is commonly used for clickstreams, telemetry, application logs, and even
 
 With no batching, checkpointing one processed Kinesis record is straightforward.
 
-With batching, each Kinesis record may contain for example 10, 50, or 100 logical events. If your consumer fails after processing only part of the batch, a checkpoint policy that is too aggressive can skip unprocessed events.
+With batching, each Kinesis record may contain, for example, 10, 50, or 100 logical events. If your consumer fails after processing only part of the batch, a checkpoint policy that is too aggressive can skip unprocessed events.
 
 The key principle is simple:
 
@@ -80,15 +80,15 @@ class KplDeaggregatedProcessor {
 
 This pattern applies to KPL de-aggregated user records. For manual batching (for example a JSON array in one record), subsequence checkpointing is not available.
 
-According to AWS docs, `checkpoint()` with no arguments and `checkpoint(String sequenceNumber)` use implicit subsequence `0`, while `checkpoint(Record)` and `checkpoint(String, long)` preserve subsequence-aware progress.
+According to the AWS docs, `checkpoint()` with no arguments and `checkpoint(String sequenceNumber)` use implicit subsequence `0`, while `checkpoint(Record)` and `checkpoint(String, long)` preserve subsequence-aware progress.
 
 ## Safe checkpointing pattern
 
 For each fetched record:
 
 1. Decode and split the batched payload into logical events.
-2. Process events one by one (or in controlled parallelism).
-3. Ensure side effects are committed safely (DB write, API call, downstream publish).
+2. Process events one by one (or with controlled parallelism).
+3. Ensure side effects are committed safely (database write, API call, or downstream publish).
 4. Checkpoint only after the full record is completed.
 
 This is the safest baseline for at-least-once pipelines.
