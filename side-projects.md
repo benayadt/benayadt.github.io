@@ -12,10 +12,10 @@ I enjoy building side projects to explore ideas and solve problems that interest
 
 [MeDoc](https://github.com/benayadt/MeDocAppFlutter) is a Flutter app for managing medications and tracking treatments. It includes medication reminders, dose tracking, and a treatment calendar, with AWS Amplify powering the backend.
 
-<img src="/assets/img/medoc-app.jpg" alt="MeDoc app sign-in screen" style="width: 40%; height: auto;">
+<img src="/assets/img/medoc-app.jpg" alt="MeDoc app sign-in screen" style="display: block; width: 40%; height: auto; margin: 0 auto;">
 
 ## Mazout
 
 [Mazout](https://d2ruzj98qzhjtg.cloudfront.net/) is a live, crowdsourced tracker for energy prices.
 
-<img src="/assets/img/mazout-app.png" alt="Mazout app screenshot" style="width: 40%; height: auto;">
+<img src="/assets/img/mazout-app.png" alt="Mazout app screenshot" style="display: block; width: 40%; height: auto; margin: 0 auto;">
